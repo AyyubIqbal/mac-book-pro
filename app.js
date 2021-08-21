@@ -64,7 +64,7 @@ function updateTotal() {
     const productPrice = parseInt(macPrice.innerText);
     const totalTotalPrice = extraDeliveryCost + extraMemoryPrice + extraStoragePrice + productPrice;
     totalPrice.innerText = totalTotalPrice;
-
+    // promo code
     if (cuponCode == 'stevekaku') {
         const priceAfterCuponCode = totalTotalPrice * 20 / 100;
         footerTotal.innerText = totalTotalPrice - priceAfterCuponCode;
